@@ -33,6 +33,13 @@ namespace lab8
 
             listBoxResult.Items.Clear();
 
+            if (n == 0)
+            {
+                
+                listBoxResult.Items.Add("0");
+                return; 
+            }
+
             await Task.Run(() =>
             {
                 for (int i = 0; i < n; i++)
